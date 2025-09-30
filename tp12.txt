@@ -1,7 +1,7 @@
 import random
 import time
 def ejercicio1():
-       nombres=["josue", "matias", "alberto", "mateo", "jeremy", "ayrton", "alejandro", "ignacio", "frodo", "ngolo ngolo kante"]
+       nombres = ["cucurella", "matias", "nigga", "mateo", "jeremy", "ayrton", "alejandro", "ignacio", "lomita", "chechom"]
        mayor=nombres[0]
        for x in nombres:
         if len(x)>len(mayor):
@@ -12,7 +12,7 @@ def ejercicio1():
 
 
 def ejercicio2():
-   nombres = ["josue", "matias", "alberto", "mateo", "jeremy", "ayrton", "alejandro", "ignacio", "frodo", "ngolo ngolo kante"]
+   nombres = ["cucurella", "matias", "nigga", "mateo", "jeremy", "ayrton", "alejandro", "ignacio", "lomita", "chechom"]
    vocales="aeiouAEIOU"
    contador_vocales=0
    for palabra in nombres:
@@ -81,7 +81,7 @@ def menu():
            descartar_cartas()
            time.sleep(3)
        elif opcion==3:
-           print("que aburrido")
+           print("sybau")
            time.sleep(1)
            print("fin")
            time.sleep(1)
@@ -95,3 +95,4 @@ def menu():
        else:
            print("error")
 menu()
+
