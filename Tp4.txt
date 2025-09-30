@@ -1,0 +1,53 @@
+import random
+matriz=[["","","","","","","","","",""],
+       ["","","","","","","","","",""],
+       ["","","","","","","","","",""],
+       ["","","","","","","","","",""],
+       ["","","","","","","","","",""],
+       ["","","","","","","","","",""],
+       ["","","","","","","","","",""],
+       ["","","","","","","","","",""],
+       ["","","","","","","","","",""],
+       ["","","","","","","","","",""]]
+mostrar_matriz=[["","","","","","","","","",""],
+               ["","","","","","","","","",""],
+               ["","","","","","","","","",""],
+               ["","","","","","","","","",""],
+               ["","","","","","","","","",""],
+               ["","","","","","","","","",""],
+               ["","","","","","","","","",""],
+               ["","","","","","","","","",""],
+               ["","","","","","","","","",""],
+               ["","","","","","","","","",""]]
+cofres=3
+for x in range(cofres):
+       indice1 = random.randint(0,9)
+       indice2 = random.randint(0,9)
+       matriz[indice1][indice2]="✓"
+intentos=5
+
+
+while cofres>0 and intentos!=0:
+       print(f"Te quedan {intentos} intentos")
+       for fila in mostrar_matriz:
+               print(fila)
+       valores1=int(input("ingrese la fila: "))
+       valores2 = int(input("ingrese la columna: "))
+       if matriz[valores1-1][valores2-1]=="✓":
+               mostrar_matriz[valores1-1][valores2-1]="✓"
+               cofres -= 1
+               print(f"Cofres restantes: {cofres} Cofres")
+       else:
+               mostrar_matriz[valores1-1][valores2-1] = "X"
+               print(f"Intente de vuelta, le quedan {cofres} cofres")
+               intentos-=1
+
+
+if intentos==0:
+       print(f"""sos un bot travieso 
+               el mapa con los cofres era:
+""")
+       for fila in matriz:
+               print(fila)
+else:
+       print("win")
