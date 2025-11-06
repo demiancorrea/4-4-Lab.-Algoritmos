@@ -1,0 +1,27 @@
+[
+    {
+        "nombre": "Laptop",
+        "precio": 1200,
+        "categoria": "Electrónica"
+    },
+    {
+        "nombre": "Mouse",
+        "precio": 25,
+        "categoria": "Electrónica"
+    },
+    {
+        "nombre": "Teclado",
+        "precio": 40,
+        "categoria": "Electrónica"
+    },
+    {
+        "nombre": "Silla de Oficina",
+        "precio": 300,
+        "categoria": "Muebles"
+    },
+    {
+        "nombre": "Auriculares",
+        "precio": 1200,
+        "categoria": "Electrónica"
+    }
+]
