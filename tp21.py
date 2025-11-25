@@ -74,3 +74,5 @@ def reponer():
         elif escoger_producto == 2:
             print("Cantidad Actual: ",paracetamol.reponer())
 reponer()
+print(ibuprofeno.nombre,ibuprofeno.precio,ibuprofeno.categoria,ibuprofeno.stock,ibuprofeno.codigo_de_barra,ibuprofeno.esta_en_stock_critico())
+print(paracetamol.nombre,paracetamol.precio,paracetamol.categoria,paracetamol.stock,paracetamol.codigo_de_barra,paracetamol.esta_en_stock_critico())
